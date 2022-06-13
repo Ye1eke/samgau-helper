@@ -13,7 +13,7 @@ bot.command('question', async (ctx) => {
     try { 
         await ctx.replyWithHTML('<b>Вопросы</b>', Markup.inlineKeyboard(
             [ 
-                [Markup.button.callback('g', 'btn_1'), Markup.button.callback('КОМПЕТЕНЦИЯ', 'btn_2')],
+                [Markup.button.callback('О ХОЛДИНГЕ', 'btn_1'), Markup.button.callback('КОМПЕТЕНЦИЯ', 'btn_2')],
                 [Markup.button.callback('ДОСТИЖЕНИЯ', 'btn_3'), Markup.button.callback('ВАКАНСИИ', 'btn_4')]
             ]
         ))
