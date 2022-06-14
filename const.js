@@ -1,49 +1,51 @@
 const commands = `
+
+
 /start - Перезапустить Бота
 /help - Помощь
 /guide - Справочник
 `
 
 const text1 = `
-Something...
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 
 const text2 = `
-Something
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 
 const text3 = `
-Something
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 const text4 = `
-Something
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 const text5 = `
-Something...
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 
 const text6 = `
-Something
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 
 const text7 = `
-Something
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 const text8 = `
-Something
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 
 const text9 = `
-Something
-<a href = "">Some link</a>
+Some text...
+<a href = "https://www.youtube.com/">Some link</a>
 `
 
 

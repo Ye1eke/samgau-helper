@@ -8,7 +8,7 @@ const text = require('./const')
 const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) => ctx.reply(
     `Привет ${ctx.message.from.first_name ? ctx.message.from.first_name : 'незнакомец' }! 👋 
-    \n\n Мои команды: \n ${text.commands}`)
+    \n\nМои команды: \n ${text.commands}`)
     )
 bot.help((ctx) => ctx.reply(text.commands))
 
