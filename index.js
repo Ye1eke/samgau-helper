@@ -40,9 +40,7 @@ function addAction(name, text) {
         try {
             await ctx.answerCbQuery()
             
-            await ctx.reply(text, {
-                disable_web_page_preview: true
-            })
+            await ctx.replyWithHTML(text)
         } catch(e) {
             console.error(e)
         }
