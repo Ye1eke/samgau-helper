@@ -39,7 +39,7 @@ bot.action('btn_1', async ctx => {
     try {
         await ctx.answerCbQuery()
 
-        await ctx.reply('Корпоративная культура Samgau', Markup.inlineKeyboard(
+        await ctx.replyWithHTML('Корпоративная культура Samgau', Markup.inlineKeyboard(
             [Markup.button.callback(`${text.link1}`, 'btn_1')]
         ))
     } catch(e) {
