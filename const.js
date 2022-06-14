@@ -1,6 +1,4 @@
 const commands = `
-
-
 /start - Перезапустить Бота
 /help - Помощь
 /guide - Справочник
@@ -10,12 +8,10 @@ const text1 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
 `
-
 const text2 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
 `
-
 const text3 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
@@ -28,12 +24,10 @@ const text5 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
 `
-
 const text6 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
 `
-
 const text7 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
@@ -42,12 +36,10 @@ const text8 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
 `
-
 const text9 = `
 Some text...
 <a href = "https://www.youtube.com/">Some link</a>
 `
-
 
 module.exports.commands = commands
 module.exports.text1 = text1
