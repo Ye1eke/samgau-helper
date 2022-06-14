@@ -1,7 +1,7 @@
 const commands = `
 /start - Перезапустить Бота
 /help - Помощь
-/guide - Дерево Справочник
+/guide - Справочник
 `
 
 const text1 = `
