@@ -35,31 +35,29 @@ bot.command('guide', async (ctx) => {
 
 })
 
-bot.action('btn_1', async ctx => {
-    try {
-        await ctx.answerCbQuery()
+function addAction(name, text) { 
+    bot.action(name, async ctx => {
+        try {
+            await ctx.answerCbQuery()
+            
+            await ctx.reply(text, {
+                disable_web_page_preview: true
+            })
+        } catch(e) {
+            console.error(e)
+        }
+    })
+}
 
-        await ctx.replyWithHTML('Корпоративная культура Samgau', Markup.inlineKeyboard(
-            [Markup.button.callback(`${text.link1}`, 'btn_1')]
-        ))
-    } catch(e) {
-        console.error(e)
-    }
-})
-
-bot.action('btn_2', async ctx => {
-    try {
-        await ctx.answerCbQuery()
-
-        await ctx.replyWithHTML('Корпоративная культура Samgau', Markup.inlineKeyboard(
-            [Markup.button.callback('🤠Письмо руководителя Максимов Еаг🤠', 'btn_1')]
-        ))
-    } catch(e) {
-        console.error(e)
-    }
-})
-
-
+addAction('btn_1', text.text1)
+addAction('btn_2', text.text2)
+addAction('btn_3', text.text3)
+addAction('btn_4', text.text4)
+addAction('btn_5', text.text5)
+addAction('btn_6', text.text6)
+addAction('btn_7', text.text7)
+addAction('btn_8', text.text8)
+addAction('btn_9', text.text9)
 
 // function addAction(name, src, text) { 
 //     bot.action(name, async ctx => {
@@ -79,10 +77,7 @@ bot.action('btn_2', async ctx => {
 //     })
 // }
 
-// addAction('btn_1', './img/1.jpg', text.text1)
-// addAction('btn_2', './img/2.jpg', text.text2)
-// addAction('btn_3', './img/3.jpg', text.text3)
-// addAction('btn_4', './img/4.jpg', text.text4)
+
 
 
 bot.launch()
