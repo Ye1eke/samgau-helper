@@ -8,9 +8,9 @@ const text = require('./const')
 const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) => ctx.reply(
     `Привет ${ctx.message.from.first_name ? ctx.message.from.first_name : 'незнакомец'}! 👋 
-    \nЧто бы тебе легко было ориентироваться \nу меня только 3 команды👇\n\nМои команды: ${text.commands}`)
+    ${text.startText + text.commands}`)
 )
-bot.help((ctx) => ctx.reply(`📘 В справочнике (/guide) есть 9 кнопок. Если ты нашел свою тематику, просто нажми на неё и в тот же момент высветится ссылка, либо несколько вариантов со ссылками.\n\nМои команды:${text.commands}`))
+bot.help((ctx) => ctx.reply(`${text.helpText + text.commands}`))
 
 bot.command('guide', async (ctx) => {
     try {
@@ -52,7 +52,7 @@ function addAction(name) {
             if (name === 'btn_4') {
                 await ctx.replyWithHTML(text.text4)
             }
-            
+
             if (name === 'btn_5') {
                 await ctx.replyWithHTML(text.text5)
             }

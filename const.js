@@ -1,7 +1,17 @@
 const commands = `
+Мои команды:
 /start - Перезапустить Бота
 /help - Помощь
 /guide - Справочник
+`
+
+const startText = `
+Что бы тебе легко было ориентироваться \nу меня только 3 команды👇
+`
+
+const helpText = `
+📘 В справочнике (/guide) есть 9 кнопок. Если ты нашел свою 
+тематику, просто нажми на неё и в тот же момент высветится ссылка, либо несколько вариантов со ссылками.
 `
 
 const text1 = `
@@ -84,6 +94,8 @@ href="https://wiki.samgau.com/pages/viewpage.action?pageId=27165114">Наши <b
 
 
 module.exports.commands = commands
+module.exports.startText = startText
+module.exports.helpText = helpText
 module.exports.text1 = text1
 module.exports.text2 = text2
 module.exports.text3 = text3
