@@ -6,12 +6,11 @@ const commands = `
 `
 
 const startText = `
-Что бы тебе легко было ориентироваться \nу меня только 3 команды👇
+Что бы тебе легко было ориентироваться, \nу меня только 3 команды👇
 `
 
 const helpText = `
-📘 В справочнике (/guide) есть 9 кнопок. Если ты нашел свою 
-тематику, просто нажми на неё и в тот же момент высветится ссылка, либо несколько вариантов со ссылками.
+📘 В справочнике (/guide) есть 9 кнопок. Если ты нашел свою тематику, просто нажми на неё, и в тот же момент высветится ссылка, либо несколько вариантов со ссылками.
 `
 
 const text1 = `
@@ -20,7 +19,7 @@ const text1 = `
 `
 
 const text2 = `
-💡Наша Идеология💡\n<i>Корпаративная культура <b>Samgau</b></i>
+💡Наша Идеология💡\n<i>Корпоративная культура <b>Samgau</b></i>
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24513516">Письмо руководителя <b>Максимов Евгений👨🏻‍🦰</b></a>
 `
 
@@ -43,12 +42,11 @@ const text4 = `
 
 const text5 = `
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512592">💰Учет и оплата <b>рабочего времени💰</b></a>\n
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512617">1 )<b>Учёт переработок➰</b> <i>для оплаты</i></a>
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512607">2) <b>Удаленная работа➿</b></a>
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512613">3) <i>Заранее согласованное </i><b>отсутствие на работе</b> <i>(санкционированный прогул с возможностью отработки)🔜</i></a>
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=30049487">4) <b>Внутренний аутсорс</b> <i>(работа на смежных проектах)🔝</i></a>\n
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512617"><b>Учёт переработок</b> <i>для оплаты</i>✔️</a>
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512607"><b>Удаленная работа➿</b></a>
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512613"><i>Заранее согласованное </i><b>отсутствие на работе</b> <i>(санкционированный прогул с возможностью отработки)🔜</i></a>
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=30049487"><b>Внутренний аутсорс</b> <i>(работа на смежных проектах)🔝</i></a>\n
 <a href="https://workpace.samgau.com/main"><i>Ссылка на заявку:</i> <b>Учет и оплата рабочего времени〰️</b></a>\n
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512617"><b>Учёт переработок для оплаты✔️</b></a>
 `
 
 const text6 = `
@@ -58,25 +56,27 @@ const text6 = `
 
 const text7 = `
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333357">🏖️Как Уйти в Отпуск🏖️</a>\n
-<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333369">Как оформить ежегодный оплачиваемый трудовой отпуск?⭕️</a></i>
+<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333369">⭕️Как оформить ежегодный оплачиваемый трудовой отпуск?</a></i>
 <i><a href="https://wiki.samgau.com/pages/viewpageattachments.action?pageId=19333369&metadataLink=true&preview=/19333369/19334898/%D0%9E%D1%82%D0%BF%D1%83%D1%81%D0%BA%20%D0%BE%D0%BF%D0%BB%D0%B0%D1%87%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9%20%D0%B5%D0%B6%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9%20%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%BE%D0%B9%20%D0%BE%D1%82%D0%BF%D1%83%D1%81%D0%BA.pdf"><b>Образец</b></a></i>\n
-<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333376">Как оформить отпуск без сохранения заработной платы⭕️</a></i>
+<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333376">⭕️Как оформить отпуск без сохранения заработной платы</a></i>
 <i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333376&preview=/19333376/21791370/%D0%9E%D1%82%D0%BF%D1%83%D1%81%D0%BA%20%D0%B1%D0%B5%D0%B7%20%D1%81%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%B7%D0%B0%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BD%D0%BE%D0%B9%20%D0%BF%D0%BB%D0%B0%D1%82%D1%8B.pdf"><b>Образец</b></a></i>\n
-<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333380">Отпуск в связи с беременностью и рождением ребенка (детей), усыновлением (удочерением) новорожденного ребенка (детей)⭕️</a></i>
+<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333380">⭕️Отпуск в связи с беременностью и рождением ребенка (детей), усыновлением (удочерением) новорожденного ребенка (детей)</a></i>
 <i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333380&preview=/19333380/19334906/%D0%97%D0%B0%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%20%D0%BE%D1%82%D0%BF%D1%83%D1%81%D0%BA%20%D0%BF%D0%BE%20%D0%B1%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8%20%D0%B8%20%D1%80%D0%BE%D0%B4%D0%B0%D0%BC.pdf"><b>Образец</b></a></i>\n
-<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333385">Как получить компенсацию за неиспользованные дни отпуска?</a></i>
-<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333385&preview=/19333385/19334836/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D1%81%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B7%D0%B0%20%D0%BD%D0%B5%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BE%D1%82%D0%BF%D1%83%D1%81%D0%BA.pdf"><b>Заявление о выплате компенсации⭕️</b></a></i>
+<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333385">⭕️Как получить компенсацию за неиспользованные дни отпуска?</a></i>
+<i><a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333385&preview=/19333385/19334836/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B5%D0%BD%D1%81%D0%B0%D1%86%D0%B8%D1%8F%20%D0%B7%D0%B0%20%D0%BD%D0%B5%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BE%D1%82%D0%BF%D1%83%D1%81%D0%BA.pdf"><b>Образец</b></a></i>
 `
 
 const text8 = `
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=30054387">✅Корпоративные привилегии для сотрудников <b>Samgau</b>✅</a>\n
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=44939258"><b>Рабочие:</b></a>
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333301">Заявка на вызов такси🚕</a>
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19333316">Как получить аванс 🧾</a>
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512630">Реферальная программа "Приведи Друга - Получи Бонус💁🏻"</a>\n
-<b>Обучающие:</b>\n<a href="https://wiki.samgau.com/display/HR/English+Speaking+Club">English Speaking Club🗣</a>
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=44939262"><b>Обучающие:</b> </a>
+<a href="https://wiki.samgau.com/display/HR/English+Speaking+Club">English Speaking Club🗣</a>
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=19334477">БИБЛИОТЕКА ЗНАНИЙ📕📕📕</a>
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24511506">Как получить книгу в библиотеке📚</a>
-<a href="https://docs.google.com/spreadsheets/d/1iKcAWO8efXIPcVul52y0sKKMsXjw3UL6Cu9TyBMBdMI/edit#gid=0">пройдите по ссылке и выберите подходящую книгу, посмотрите, свободна ли она 📓</a>\n
+<a href="https://docs.google.com/spreadsheets/d/1iKcAWO8efXIPcVul52y0sKKMsXjw3UL6Cu9TyBMBdMI/edit#gid=0"><b>пройдите по ссылке и выберите подходящую книгу, посмотрите, свободна ли она 📓</b></a>\n
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=44939252"><b>Спортивные:</b></a>
 <a href="https://wiki.samgau.com/display/HR/SamgauFootball">SamgauFootball⚽️</a>
 <a href="https://wiki.samgau.com/display/HR/SamgauRunners+Club">SamgauRunners Club🏃‍♀️🏃</a>
