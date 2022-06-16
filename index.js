@@ -10,26 +10,26 @@ bot.start((ctx) => ctx.reply(
     `Привет, ${ctx.message.from.first_name ? ctx.message.from.first_name : 'незнакомец'}! 👋 
     ${text.startText + text.commands}`)
 )
-bot.help((ctx) => ctx.reply(`${text.helpText + text.commands}`))
+bot.help((ctx) => ctx.replyWithHTML(`${text.helpText + text.commands}`))
 
 bot.command('guide', async (ctx) => {
     try {
         await ctx.replyWithHTML('<b>Справочник</b>', Markup.inlineKeyboard(
             [
-                [Markup.button.callback('🤠Наше Руководство🤠', 'btn_1')],
-                [Markup.button.callback('💡Наша Идеология💡', 'btn_2')],
-                [Markup.button.callback('🗓️Режим Работы🗓️', 'btn_3')],
-                [Markup.button.callback('📌Внутренние Нормативные Документы📌', 'btn_4')],
-                [Markup.button.callback('💰Учет и Оплата Рабочего Времени💰', 'btn_5')],
-                [Markup.button.callback('🎫Правила Командирования Сотрудников🎫', 'btn_6')],
-                [Markup.button.callback('🏖️Как Уйти в Отпуск🏖️', 'btn_7')],
-                [Markup.button.callback('✅Корпоративные привилегии для сотрудников✅', 'btn_8')],
-                [Markup.button.callback('👽FAQ о Жизни Компании👽', 'btn_9')],
+                [Markup.button.callback('🤠 Наше Руководство 🤠', 'btn_1')],
+                [Markup.button.callback('💡 Наша Идеология 💡', 'btn_2')],
+                [Markup.button.callback('🗓️ Режим Работы 🗓️', 'btn_3')],
+                [Markup.button.callback('📌 Внутренние Нормативные Документы 📌', 'btn_4')],
+                [Markup.button.callback('🕔 Учет и Оплата Рабочего Времени 💰', 'btn_5')],
+                [Markup.button.callback('🎫 Правила Командирования Сотрудников 🎫', 'btn_6')],
+                [Markup.button.callback('🏖️ Как Уйти в Отпуск 🏖️', 'btn_7')],
+                [Markup.button.callback('✅ Корпоративные привилегии для сотрудников ✅', 'btn_8')],
+                [Markup.button.callback('👽 FAQ о Жизни Компании 👽', 'btn_9')],
             ]
         ))
     } catch (e) {
         console.error(e)
-    }
+    } 
 })
 
 function addAction(name) {
