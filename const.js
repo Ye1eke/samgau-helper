@@ -42,10 +42,10 @@ const text4 = `
 
 const text5 = `
 <a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512592">🕔 Учет и оплата <b>рабочего времени 💰</b></a>\n
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512617"><b>✔️  Учёт переработок</b> <i>для оплаты</i> </a>\n
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512607"><b>👨🏼‍💻  Удаленная работа </b></a>\n
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512613"><i>🔜  Заранее согласованное </i><b>отсутствие на работе</b> <i>(санкционированный прогул с возможностью отработки)</i></a>\n
-<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=30049487"><b>➡️  Внутренний аутсорс</b> <i>(работа на смежных проектах)</i></a>\n
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512617"><b>✔️ Учёт переработок</b> <i>для оплаты</i> </a>\n
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512607"><b>👨🏼‍💻 Удаленная работа </b></a>\n
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=24512613"><i>🔜 Заранее согласованное </i><b>отсутствие на работе</b> <i>(санкционированный прогул с возможностью отработки)</i></a>\n
+<a href="https://wiki.samgau.com/pages/viewpage.action?pageId=30049487"><b>➡️ Внутренний аутсорс</b> <i>(работа на смежных проектах)</i></a>\n
 <a href="https://workpace.samgau.com/main"><i>🤖  Ссылка на заявку:</i> <b>Учет и оплата рабочего времени</b></a>\n
 `
 
