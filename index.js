@@ -1,16 +1,16 @@
 const {
     Telegraf,
     Markup
-} = require('telegraf')
-require("dotenv").config()
-const text = require('./const')
+} = require('telegraf');
+require("dotenv").config();
+const text = require('./const');
 
-const bot = new Telegraf(process.env.BOT_TOKEN)
+const bot = new Telegraf(process.env.BOT_TOKEN);
 bot.start((ctx) => ctx.reply(
     `Привет, ${ctx.message.from.first_name ? ctx.message.from.first_name : 'незнакомец'}! 👋 
     ${text.startText + text.commands}`)
-)
-bot.help((ctx) => ctx.replyWithHTML(`${text.helpText + text.commands}`))
+);
+bot.help((ctx) => ctx.replyWithHTML(`${text.helpText + text.commands}`));
 
 bot.command('guide', async (ctx) => {
     try {
@@ -30,7 +30,7 @@ bot.command('guide', async (ctx) => {
     } catch (e) {
         console.error(e)
     } 
-})
+});
 
 function addAction(name) {
     bot.action(name, async ctx => {
@@ -40,7 +40,6 @@ function addAction(name) {
             if (name === 'btn_1') {
                 await ctx.replyWithHTML(text.text1)
             }
-
             if (name === 'btn_2') {
                 await ctx.replyWithHTML(text.text2)
             }
@@ -89,6 +88,14 @@ addAction('btn_6')
 addAction('btn_7')
 addAction('btn_8')
 addAction('btn_9')
+
+bot.on('message', async (ctx) => {
+    try {
+        return ctx.reply(`К сожалению, я тебя не понимаю 🥺\n ${text.commands}`)
+    } catch (e) {
+        console.error(e)
+    }
+})
 
 bot.launch()
 
